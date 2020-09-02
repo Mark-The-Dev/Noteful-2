@@ -18,11 +18,11 @@ export default class NoteListMain extends React.Component {
   
   static contextType = NotefulContext
   
-  handleDeleteNote = noteId => {
-    console.log('hi')
-    this.props.history.push('/')
+  // handleDeleteNote = noteId => {
+  //   console.log('hi')
+  //   this.props.history.push('/')
     
-  }
+  // }
 
   render () {
     console.log(this.handleDeleteNote)
@@ -43,7 +43,7 @@ export default class NoteListMain extends React.Component {
                 id={note.id}
                 name={note.name}
                 modified={note.modified}
-                onDeleteNote={this.handleDeleteNote}
+                // onDeleteNote={this.handleDeleteNote}
               />
             </li>
           )}
